@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anioval Fit Finder</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/darkly/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/yeti/bootstrap.min.css">
+    <link rel="stylesheet" href="http://seiyria.com/bootstrap-slider/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js"></script> -->
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- <link rel="stylesheet/less" type="text/css" href="styles/styles.less"> -->
+
+    <script src="http://seiyria.com/bootstrap-slider/js/bootstrap-slider.js"></script>
+
+    <!-- <link rel="stylesheet" href="dist/bootstrap-slider/less/slider.less"> -->
+    <style>
+        .jumbotron {
+            padding-left: 2em;
+            padding-right: 2em;
+        }
+        
+        .container {
+            margin-top: 70px;
+            text-align: center;
+        }
+        
+        div.JJSpace {
+            padding: 0 3em;
+            max-width: 100%;
+        }
+        
+        .slider-tick-label {}
+    </style>
+</head>
+
+<body>
+    <header class="masthead" style="background-image: url('images/bg-header.jpg');">
+        <div class="row text-center">
+            <h1 class="text-success text-center"><b>Anioval</b><span> </span><small>Fit Finder</small></h1>
+            <p class="text-muted">Beta v.0.2</p>
+            <br>
+            <button type="button" class="btn btn-success mt-3" data-toggle="modal" data-target="#myModal">
+            Launch
+            </button>
+        </div>
+
+    </header>
+    <div class="container">
+
+
+
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="js-title-step"></h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row hide" data-step="1" data-title="Step 1: Your Measurements">
+                        <div class="row text-center inline-block">
+                            <div class="col-md-6">
+                                <div class="justify-content-bottom" id="product-img">
+                                    <img src="https://dummyimage.com/250x375/000/fff.png&text=Product+Image" alt="250x375">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h2 class="text-grey">Your Measurements</h2>
+                                <hr>
+                                <p class="text-muted pb-3">Find the size that fits you best based on people just like you.</p>
+                                <div class="col-md-12 text-center">
+                                    <h3 class="text-success">Height</h3>
+                                    <form class="form-inline my-2 my-lg-0" _lpchecked="1">
+                                        <input class="form-control mr-sm-2" type="text" placeholder="Height">
+                                    </form>
+                                    <h3 class="text-success">Weight</h3>
+                                    <form class="form-inline my-2 my-lg-0" _lpchecked="1">
+                                        <input class="form-control mr-sm-2" type="text" placeholder="Weight">
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row hide" data-step="2" data-title="Step 2: Choose Your Belly Shape">
+                        <div class="container-fluid">
+                            <h2 class="text-center text-grey pb-3">Belly Shapes</h2>
+                            <p class="text-center text-muted">Possible shapes for your height and weight:</p>
+
+                            <div class="row text-center">
+                                <ul>
+                                    <div class="col-md-4">
+                                        <li>
+                                            <a href="#">
+                                                <img class="" src="https://dummyimage.com/155x200/000/fff.png&text=Belly+Images" alt=""></a>
+                                            <h3 class="text-muted">Flatter</h3>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <li>
+                                            <a href="#">
+                                                <img class="" src="https://dummyimage.com/155x200/000/fff.png&text=Belly+Images" alt=""></a>
+                                            <h3 class="text-muted">Average/Not Sure</h3>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <li>
+                                            <a href="#">
+                                                <img class="" src="https://dummyimage.com/155x200/000/fff.png&text=Belly+Images" alt=""></a>
+                                            <h3 class="text-muted">Rounder</h3>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row hide" data-step="3" data-title="Step 3: Your Chest Shape">
+                        <div class="container-fluid">
+                            <h2 class="text-center text-grey pb-3">Chest Shapes</h2>
+                            <p class="text-center text-muted">Possible shapes for your height and weight:</p>
+
+                            <div class="row text-center">
+                                <ul>
+                                    <div class="col-md-4">
+                                        <li>
+                                            <a href="#">
+                                                <img class="" src="https://dummyimage.com/155x200/000/fff.jpg&text=Chest+Images" alt=""></a>
+                                            <h3 class="text-muted">Slimmer</h3>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <li>
+                                            <a href="#">
+                                                <img class="" src="https://dummyimage.com/155x200/000/fff.jpg&text=Chest+Images" alt=""></a>
+                                            <h3 class="text-muted">Average/Not Sure</h3>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <li>
+                                            <a href="#">
+                                                <img class="" src="https://dummyimage.com/155x200/000/fff.jpg&text=Chest+Images" alt=""></a>
+                                            <h3 class="text-muted">Broader</h3>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row hide" data-step="4" data-title="Step 4: Your Age">
+                        <div class="row text-center inline-block">
+                            <div class="col-md-6">
+                                <div class="justify-content-bottom" id="product-img">
+                                    <img src="https://dummyimage.com/250x375/000/fff.png&text=Product+Image" alt="250x375">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h2 class="text-grey">Your Measurements</h2>
+                                <hr>
+                                <p class="text-muted pb-3">Find the size that fits you best based on people just like you.</p>
+                                <div class="col-md-12 text-center">
+                                    <h3 class="text-success">Your Age <br><small>(Not how old you wish you were)</small></h3>
+                                    <form class="form-inline my-2 my-lg-0" _lpchecked="1">
+                                        <input class="form-control mr-sm-2" type="text" placeholder="Age">
+                                    </form>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row hide" data-step="5" data-title="Step 5: Your Fit Preference">
+                        <!-- <div class="jumbotron">Your Fit Preference</div> -->
+                        <div class="JJSpace">
+                            <h3 class="text-muted text-center">Choose your fit preference:</h3>
+                            <input id="ex13" type="text" data-slider-ticks="[0, 1, 2, 3, 4]" data-slider-ticks-snap-bounds="30" data-slider-ticks-labels='[' Very Tight ', 'Tight ', 'Regular ', 'Loose ', 'Very Loose ']'/>
+                            <!--<input id="ex13" type="text" data-slider-ticks="[0, 100, 200, 300, 400]" data-slider-ticks-snap-bounds="30" data-slider-ticks-labels='["$0", "$100", "$200", "$300", "$400"]' />-->
+                        </div>
+                    </div>
+
+                    <!-- Modal Step 6 -->
+                    <div class="row hide" data-step="6" data-title="Your Recommended Fit!">
+                        <div class="col-md-12">
+                            <h2 class="text-center text-muted">Your Recommended Size is:</h2>
+                            <hr class="text-muted">
+                            <h2 class="text-center text-success">Large</h2>
+                            <br>
+                            <div class="row text-center inline-block">
+                                <p class="text-muted">Based on the information you provided to us and what others with similar body types have choosen, your best fit is a <b>Large!</b></p>
+                                <br>
+                                <button class="btn btn-success">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End Modal Body -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default js-btn-step pull-left" data-orientation="cancel" data-dismiss="modal"></button>
+                    <button type="button" class="btn btn-danger js-btn-step" data-orientation="previous"></button>
+                    <button type="button" class="btn btn-success js-btn-step" data-orientation="next"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="dist/modal-steps.min.js"></script>
+
+    <!--<script src="js/functions.js"></script>-->
+
+    <script>
+        //				$(document).ready(function() {
+        $("#ex13").slider({
+            ticks: [0, 1, 2, 3, 4],
+            ticks_labels: ['Very Tight', 'Tight', 'Regular', 'Loose', 'Very Loose'],
+            ticks_snap_bounds: 30,
+            value: 200
+        });
+        $('.slider').css('width', '100%');
+        $('.slider-tick-label').click();
+        $('.slider-tick-label').css('width', '20%');
+        $('.slider-tick-label').css('min-width', '20px');
+
+
+        //      });
+    </script>
+    <script>
+        $('#myModal').modalSteps();
+    </script>
+</body>
+
+</html>
